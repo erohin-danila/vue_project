@@ -3,13 +3,11 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+import poster from "@/store/poster"
+
+const store = new Vuex.Store({
+  modules: {poster}
 })
+
+export const {dispatch, commit, getters} = store
+export default store
