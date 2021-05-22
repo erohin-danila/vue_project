@@ -3,9 +3,11 @@ import {api} from "@/helpers/api"
 class PosterService {
 
     async getAll() {
+        // eslint-disable-next-line no-useless-catch
         try {
-            const res = await api.get('/api/posters/')
-            return res.data
+           // const res = await api.get('/api/posters/')
+            const res = await api.get('/posts/')
+            return res
         } catch (e) {throw e}
     }
 

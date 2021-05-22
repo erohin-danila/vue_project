@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import poster from "@/store/poster"
+import poster from "./poster"
 
 const store = new Vuex.Store({
   modules: {poster}
