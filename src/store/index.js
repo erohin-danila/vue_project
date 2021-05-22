@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 import poster from "./poster"
 
+
 const store = new Vuex.Store({
   modules: {poster}
 })

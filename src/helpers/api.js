@@ -6,6 +6,5 @@ export const api = axios.create({
     },
     //baseURL: 'https://back-poster.admlr.lipetsk.ru/',
     baseURL: 'https://jsonplaceholder.typicode.com/',
-
-    responseType: 'json'
+responseType: 'json'
 })
