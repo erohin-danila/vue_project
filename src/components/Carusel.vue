@@ -22,10 +22,10 @@ methods:{},
 
   computed: {
     getPosters() {
-      return this.$store.getters.getPosters
+      return this.$store.getters['poster/getPosters']
     },
     getPoster() {
-      return this.$store.getters.getPoster
+      return this.$store.getters['poster/getPoster']
     },
 
     //getPosters() {

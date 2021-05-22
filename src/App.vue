@@ -37,8 +37,8 @@ export default{
     dispatch('poster/getAll')
     // dispatch('poster/getById', 1)
 
-    dispatch('poster/getAll').then(() => {
-      console.log(this.posters)
+    dispatch('poster/getAll').then((posters) => {
+     return posters;
     })
   }
 }

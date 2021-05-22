@@ -9,7 +9,8 @@ export default {
     actions: {
         async getAll(ctx) {
             const posters = await PosterService.getAll()
-            ctx.commit('setPoster', posters.results)
+            ctx.commit('setPosters', posters.data)
+            return posters.data;
         },
         // async getById(ctx, id) {
         //     const poster = await PosterService.getById(id)
